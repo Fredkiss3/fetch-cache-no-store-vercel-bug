@@ -1,5 +1,3 @@
-export const revalidate = 0;
-
 export default async function Home() {
   const baseURL = `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/time?qs=2`;
   const protocol = baseURL.startsWith("localhost") ? "http" : "https";
